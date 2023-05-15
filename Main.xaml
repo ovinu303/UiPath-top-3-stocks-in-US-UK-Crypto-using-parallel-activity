@@ -1,0 +1,495 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1904,1734" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1914,1669.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(x:String)" Name="UkGainersList">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">new List&lt;string&gt;();</CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="scg:List(x:String)" Name="UsGainersList">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">new List&lt;string&gt;();</CSharpValue>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="UsGainer3" />
+      <Variable x:TypeArguments="x:String" Name="UkGainer1" />
+      <Variable x:TypeArguments="x:String" Name="UsGainer2" />
+      <Variable x:TypeArguments="x:String" Name="UsGainer1" />
+      <Variable x:TypeArguments="x:String" Name="UkGainer3" />
+      <Variable x:TypeArguments="x:String" Name="UkGainer2" />
+      <Variable x:TypeArguments="x:String" Name="CryptoGainer1" />
+      <Variable x:TypeArguments="x:String" Name="CryptoGainer2" />
+      <Variable x:TypeArguments="x:String" Name="CryptoGainer3" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="CryptoGainersList">
+        <Variable.Default>
+          <CSharpValue x:TypeArguments="scg:List(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_96">new List&lt;string&gt;();</CSharpValue>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Parallel sap:VirtualizedContainerService.HintSize="1852,1432.6666666666667" sap2010:WorkflowViewState.IdRef="Parallel_1">
+      <Sequence DisplayName="Sequence- Find and display US top 3 stock gainers" sap:VirtualizedContainerService.HintSize="546,1385.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_58">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="UkGainer2" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="484,616" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="https://www.tradingview.com/markets/stocks-usa/market-movers-gainers/">
+          <ui:OpenBrowser.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,512.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-PAT/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_9">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a506af6d-6189-4389-86fd-838680d901b3" InformativeScreenshot="533490a05e5dcdfe5bb4236b8c1ffb17" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">UsGainer1</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-TAST/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_10">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9be07be0-c9a7-4ad8-a4fe-dca3d8ecd65d" InformativeScreenshot="1140b4b5bc7cd3ccb4db6974ff9348b1" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">UsGainer2</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-SMRT/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_11">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ffdf67f-87e1-4ef2-a657-214a33f0efef" InformativeScreenshot="e46f47cd72d9ff2be450297692c272f1" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">UsGainer3</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+              </Sequence>
+            </ActivityAction>
+          </ui:OpenBrowser.Body>
+        </ui:OpenBrowser>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_7">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">UsGainer1</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">UsGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_8">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">UsGainer2</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">UsGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_9">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">UsGainer3</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">UsGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
+          <ui:LogMessage.Message>
+            <InArgument x:TypeArguments="x:Object">
+              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">"The top 3 gainers in US stock market today are: " + string.Join(", ", UsGainersList);</CSharpValue>
+            </InArgument>
+          </ui:LogMessage.Message>
+        </ui:LogMessage>
+      </Sequence>
+      <Sequence DisplayName="Sequence- Find and display UK top 3 stock gainers" sap:VirtualizedContainerService.HintSize="546,1385.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_55">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:String" Name="UkGainer2" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="484,616" sap2010:WorkflowViewState.IdRef="OpenBrowser_4" Url="https://www.tradingview.com/markets/stocks-united-kingdom/market-movers-gainers/">
+          <ui:OpenBrowser.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,512.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-PAT/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_12">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a506af6d-6189-4389-86fd-838680d901b3" InformativeScreenshot="bfda10a78cc5990106df9d07c51a7f39" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">UkGainer1</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-TAST/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_13">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9be07be0-c9a7-4ad8-a4fe-dca3d8ecd65d" InformativeScreenshot="d9806b6138edb7231ce29ba0fe9fa61c" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">UkGainer2</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-SMRT/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_14">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ffdf67f-87e1-4ef2-a657-214a33f0efef" InformativeScreenshot="59c8d4ee5a2225ad0642c9a462c4dc66" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">UkGainer3</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+              </Sequence>
+            </ActivityAction>
+          </ui:OpenBrowser.Body>
+        </ui:OpenBrowser>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_11">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">UkGainer1</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">UkGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_12">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">UkGainer2</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">UkGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_13">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">UkGainer3</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">UkGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info">
+          <ui:LogMessage.Message>
+            <InArgument x:TypeArguments="x:Object">
+              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">"The top 3 gainers in UK stock market today are: " + string.Join(", ", UkGainersList);</CSharpValue>
+            </InArgument>
+          </ui:LogMessage.Message>
+        </ui:LogMessage>
+      </Sequence>
+      <Sequence DisplayName="Sequence- Find and display top 3 crypto gainers" sap:VirtualizedContainerService.HintSize="546,1385.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_60">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="484,616" sap2010:WorkflowViewState.IdRef="OpenBrowser_5" Url="https://www.tradingview.com/markets/cryptocurrencies/prices-gainers/">
+          <ui:OpenBrowser.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,512.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-PAT/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_15">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a506af6d-6189-4389-86fd-838680d901b3" InformativeScreenshot="f504340546e7881135185a8597cd30ee" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">CryptoGainer1</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-TAST/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_16">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9be07be0-c9a7-4ad8-a4fe-dca3d8ecd65d" InformativeScreenshot="0bd475038c909a35803b4e555b822bf1" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">CryptoGainer2</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'A  /symbols/LSE-SMRT/'" sap:VirtualizedContainerService.HintSize="388,107.33333333333333" sap2010:WorkflowViewState.IdRef="GetValue_17">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3ffdf67f-87e1-4ef2-a657-214a33f0efef" InformativeScreenshot="6a274a80df1583789531e20bc093c86b" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='A' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">CryptoGainer3</CSharpReference>
+                    </OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+              </Sequence>
+            </ActivityAction>
+          </ui:OpenBrowser.Body>
+        </ui:OpenBrowser>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_14">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">CryptoGainer1</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">CryptoGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_15">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87">CryptoGainer2</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">CryptoGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_16">
+          <uasa:AppendItemToList.ItemToAppend>
+            <InArgument x:TypeArguments="x:String">
+              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">CryptoGainer3</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.ItemToAppend>
+          <uasa:AppendItemToList.List>
+            <InArgument x:TypeArguments="scg:IList(x:String)">
+              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">CryptoGainersList</CSharpValue>
+            </InArgument>
+          </uasa:AppendItemToList.List>
+        </uasa:AppendItemToList>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info">
+          <ui:LogMessage.Message>
+            <InArgument x:TypeArguments="x:Object">
+              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">"The top 3 gainers in crypto market today are: " + string.Join(", ", CryptoGainersList);</CSharpValue>
+            </InArgument>
+          </ui:LogMessage.Message>
+        </ui:LogMessage>
+      </Sequence>
+    </Parallel>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1852,86" sap2010:WorkflowViewState.IdRef="MessageBox_10">
+      <ui:MessageBox.Text>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95" xml:space="preserve">"The top 3 gainers in US stock market today are: " + string.Join(", ", UsGainersList) + "\n" +
+"The top 3 gainers in UK stock market today are: " + string.Join(", ", UkGainersList) + "\n" +
+"The top 3 gainers in crypto market today are: " + string.Join(", ", CryptoGainersList);</CSharpValue>
+        </InArgument>
+      </ui:MessageBox.Text>
+    </ui:MessageBox>
+  </Sequence>
+</Activity>
