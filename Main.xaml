@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1904,1734" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1904,1394" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -91,7 +91,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1914,1669.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1914,1329.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="UkGainersList">
         <Variable.Default>
@@ -123,8 +123,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Parallel sap:VirtualizedContainerService.HintSize="1852,1432.6666666666667" sap2010:WorkflowViewState.IdRef="Parallel_1">
-      <Sequence DisplayName="Sequence- Find and display US top 3 stock gainers" sap:VirtualizedContainerService.HintSize="546,1385.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_58">
+    <Parallel sap:VirtualizedContainerService.HintSize="1852,1092.6666666666667" sap2010:WorkflowViewState.IdRef="Parallel_1">
+      <Sequence DisplayName="Sequence- Find and display US top 3 stock gainers" sap:VirtualizedContainerService.HintSize="546,1045.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_58">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="UkGainer2" />
         </Sequence.Variables>
@@ -200,42 +200,26 @@
             </ActivityAction>
           </ui:OpenBrowser.Body>
         </ui:OpenBrowser>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_7">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">UsGainer1</CSharpValue>
+        <uasc:AppendItemToCollection x:TypeArguments="x:String" DisplayName="Append items to collection" sap:VirtualizedContainerService.HintSize="484,144" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
+          <uasc:AppendItemToCollection.Collection>
+            <InArgument x:TypeArguments="scg:ICollection(x:String)">
+              <CSharpValue x:TypeArguments="scg:ICollection(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">UsGainersList</CSharpValue>
             </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">UsGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_8">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">UsGainer2</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">UsGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_9">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">UsGainer3</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">UsGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
+          </uasc:AppendItemToCollection.Collection>
+          <uasc:AppendItemToCollection.Items>
+            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">UsGainer1</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">UsGainer2</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">UsGainer3</CSharpValue>
+              </InArgument>
+            </scg:List>
+          </uasc:AppendItemToCollection.Items>
+        </uasc:AppendItemToCollection>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info">
           <ui:LogMessage.Message>
             <InArgument x:TypeArguments="x:Object">
@@ -244,7 +228,7 @@
           </ui:LogMessage.Message>
         </ui:LogMessage>
       </Sequence>
-      <Sequence DisplayName="Sequence- Find and display UK top 3 stock gainers" sap:VirtualizedContainerService.HintSize="546,1385.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_55">
+      <Sequence DisplayName="Sequence- Find and display UK top 3 stock gainers" sap:VirtualizedContainerService.HintSize="546,1045.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_55">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="UkGainer2" />
         </Sequence.Variables>
@@ -320,42 +304,26 @@
             </ActivityAction>
           </ui:OpenBrowser.Body>
         </ui:OpenBrowser>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_11">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">UkGainer1</CSharpValue>
+        <uasc:AppendItemToCollection x:TypeArguments="x:String" DisplayName="Append items to collection" sap:VirtualizedContainerService.HintSize="484,144" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_2">
+          <uasc:AppendItemToCollection.Collection>
+            <InArgument x:TypeArguments="scg:ICollection(x:String)">
+              <CSharpValue x:TypeArguments="scg:ICollection(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">UkGainersList</CSharpValue>
             </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">UkGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_12">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">UkGainer2</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">UkGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_13">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">UkGainer3</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">UkGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
+          </uasc:AppendItemToCollection.Collection>
+          <uasc:AppendItemToCollection.Items>
+            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">UkGainer1</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">UkGainer2</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_104">UkGainer3</CSharpValue>
+              </InArgument>
+            </scg:List>
+          </uasc:AppendItemToCollection.Items>
+        </uasc:AppendItemToCollection>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info">
           <ui:LogMessage.Message>
             <InArgument x:TypeArguments="x:Object">
@@ -364,7 +332,7 @@
           </ui:LogMessage.Message>
         </ui:LogMessage>
       </Sequence>
-      <Sequence DisplayName="Sequence- Find and display top 3 crypto gainers" sap:VirtualizedContainerService.HintSize="546,1385.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_60">
+      <Sequence DisplayName="Sequence- Find and display top 3 crypto gainers" sap:VirtualizedContainerService.HintSize="546,1045.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_60">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -437,42 +405,26 @@
             </ActivityAction>
           </ui:OpenBrowser.Body>
         </ui:OpenBrowser>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_14">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">CryptoGainer1</CSharpValue>
+        <uasc:AppendItemToCollection x:TypeArguments="x:String" DisplayName="Append items to collection" sap:VirtualizedContainerService.HintSize="484,144" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_3">
+          <uasc:AppendItemToCollection.Collection>
+            <InArgument x:TypeArguments="scg:ICollection(x:String)">
+              <CSharpValue x:TypeArguments="scg:ICollection(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_105">CryptoGainersList</CSharpValue>
             </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">CryptoGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_15">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87">CryptoGainer2</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">CryptoGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
-        <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="484,134.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_16">
-          <uasa:AppendItemToList.ItemToAppend>
-            <InArgument x:TypeArguments="x:String">
-              <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">CryptoGainer3</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.ItemToAppend>
-          <uasa:AppendItemToList.List>
-            <InArgument x:TypeArguments="scg:IList(x:String)">
-              <CSharpValue x:TypeArguments="scg:IList(x:String)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">CryptoGainersList</CSharpValue>
-            </InArgument>
-          </uasa:AppendItemToList.List>
-        </uasa:AppendItemToList>
+          </uasc:AppendItemToCollection.Collection>
+          <uasc:AppendItemToCollection.Items>
+            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">CryptoGainer1</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_107">CryptoGainer2</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_108">CryptoGainer3</CSharpValue>
+              </InArgument>
+            </scg:List>
+          </uasc:AppendItemToCollection.Items>
+        </uasc:AppendItemToCollection>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="484,94.66666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info">
           <ui:LogMessage.Message>
             <InArgument x:TypeArguments="x:Object">
